@@ -1,0 +1,143 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.12%, #1D1E28), color-stop(94.84%, #261C2D), to(#261A2D));
+  background: linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+main {
+  background-image: url("./images/bg-stars.svg");
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: 'red hat display';
+}
+
+.title {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.counter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.square {
+  height: 150px;
+  width: 148px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  background-color: #191A23;
+}
+
+.over-square {
+  background-color: #343650;
+  width: 100%;
+  height: 93.333%;
+  border-radius: 8px;
+}
+
+.shadow-effect {
+  background: #000000;
+  opacity: 0.15;
+  border-radius: 0px 0px 8px 8px;
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  width: 100%;
+  height: 55%;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.square-divider {
+  width: 100%;
+  height: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+  top: -5%;
+  z-index: 3;
+}
+
+.line-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  opacity: 0.25;
+  position: relative;
+  z-index: -1;
+}
+
+.circle {
+  height: 12px;
+  width: 12px;
+  left: 154px;
+  top: 64px;
+  border-radius: 8px;
+  background-color: #000000;
+}
+
+.left {
+  position: relative;
+  top: auto;
+  left: -2.5%;
+}
+
+.right {
+  position: relative;
+  top: auto;
+  left: 2.5%;
+}
+
+.text-time {
+  position: relative;
+  top: -92%;
+  z-index: 1;
+  font-family: 'Red Hat Display';
+  font-size: 80px;
+  text-align: center;
+  color: #FB5E84;
+  font-weight: bold;
+  line-height: 71px;
+  letter-spacing: -2.4px;
+}
+
+.square-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 5.91875px;
+  color: #8385A9;
+}
+
+.square-container + .square-container {
+  margin-left: 32px;
+}
+/*# sourceMappingURL=style.css.map */
