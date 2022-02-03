@@ -1,18 +1,25 @@
 body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.12%, #1D1E28), color-stop(94.84%, #261C2D), to(#261A2D));
   background: linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   height: 100vh;
+  margin: 0;
 }
 
 main {
   background-image: url("./images/bg-stars.svg");
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  background-repeat: repeat;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: 'red hat display';
+  padding-top: 132px;
 }
 
 .title {
@@ -23,15 +30,16 @@ main {
   letter-spacing: 7.5px;
   text-transform: uppercase;
   color: white;
+  margin-bottom: 104px;
 }
 
 .counter-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -39,12 +47,17 @@ main {
 }
 
 .square {
-  height: 150px;
-  width: 148px;
+  width: 24vw;
+  height: 25vh;
+  max-height: 150px;
+  max-width: 148px;
+  min-width: 70px;
+  min-height: 71px;
   left: 0px;
   top: 0px;
   border-radius: 8px;
   background-color: #191A23;
+  margin-right: clamp(15px, 2vw, 32px);
 }
 
 .over-square {
@@ -114,12 +127,26 @@ main {
   left: 2.5%;
 }
 
-.text-time {
+.text-time-container {
   position: relative;
-  top: -92%;
+  top: -60%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-time {
   z-index: 1;
   font-family: 'Red Hat Display';
-  font-size: 80px;
+  font-size: clamp(36px, 5.9vw, 80px);
   text-align: center;
   color: #FB5E84;
   font-weight: bold;
@@ -130,14 +157,59 @@ main {
 .square-text {
   text-align: center;
   font-weight: bold;
-  font-size: 14px;
+  font-size: clamp(7px, 2vw, 14px);
   line-height: 19px;
   text-align: center;
   letter-spacing: 5.91875px;
   color: #8385A9;
+  text-transform: uppercase;
 }
 
-.square-container + .square-container {
-  margin-left: 32px;
+.footer {
+  background-color: #261A2D;
+  position: absolute;
+  bottom: 0px;
+  background-image: url("./images/pattern-hills.svg");
+  background-size: cover;
+  min-height: 168px;
+  max-height: 266px;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-media-list {
+  width: 136px;
+  height: 24px;
+  margin: 0px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+svg {
+  fill: #8385A9;
+}
+
+svg:hover {
+  fill: #FB5E84;
 }
 /*# sourceMappingURL=style.css.map */

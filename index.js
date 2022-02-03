@@ -1,21 +1,17 @@
 setInterval(() => {
 var future = Date.parse("feb 06, 2022 01:30:00");
 var now = Date.now();
- diff = future - now;
+diff = future - now;
 
- days = Math.floor(diff / (1000 * 60 * 60 * 24));
- hours = Math.floor(diff/ (1000 * 60 * 60));
- minutes = Math.floor(diff/ (1000 * 60));
- secondes = Math.floor(diff/ 1000);
+days = Math.floor(diff / (1000 * 60 * 60 * 24));
+hours = Math.floor(diff/ (1000 * 60 * 60));
+minutes = Math.floor(diff/ (1000 * 60));
+secondes = Math.floor(diff/ 1000);
 
- d = days;
- h = hours - days * 24;
- m = minutes - hours * 60;
- s = secondes - minutes * 60;
-
-
-
-
+d = days;
+h = hours - days * 24;
+m = minutes - hours * 60;
+s = secondes - minutes * 60;
 
 dateText = document.getElementById("day");
 if (d <10){
