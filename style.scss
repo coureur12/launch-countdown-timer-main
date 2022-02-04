@@ -10,8 +10,15 @@ main{
     background-repeat: repeat;
     height: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     font-family: 'red hat display';
+}
+.container-element{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .title{
     font-weight: bold;
@@ -25,9 +32,12 @@ main{
 }
 .counter-container{
     display: flex;
-    align-items: space-around;
-    justify-content: center;
+    align-items: space-between;
+    justify-content: space-around;
     width: 100%;
+    background-color: royalblue;
+    max-width: 688px;
+    width: 80%;
 }
 .square{
     width: 24vw;
@@ -40,6 +50,8 @@ main{
     top: 0px;
     border-radius: 8px;
     background-color: #191A23;
+}
+.square + .square{
     margin-right: clamp(15px,2vw,32px);
 }
 .over-square{
