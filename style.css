@@ -25,7 +25,6 @@ main {
 }
 
 .container-element {
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,14 +58,13 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  background-color: royalblue;
   max-width: 688px;
   width: 80%;
 }
 
 .square {
   width: 24vw;
-  height: 25vh;
+  height: 150px;
   max-height: 150px;
   max-width: 148px;
   min-width: 70px;
@@ -205,6 +203,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: -10;
 }
 
 .social-media-list {
