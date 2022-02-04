@@ -12,7 +12,6 @@ main{
     display: flex;
     flex-direction: column;
     font-family: 'red hat display';
-    padding-top: 132px;
 }
 .title{
     font-weight: bold;
@@ -128,7 +127,7 @@ main{
 .footer{
     background-color:  #261A2D;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     background-image: url("./images/pattern-hills.svg");
     background-size: cover;
     min-height: 168px;
