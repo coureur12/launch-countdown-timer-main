@@ -232,4 +232,19 @@ svg {
 svg:hover {
   fill: #FB5E84;
 }
+
+@media only screen and (max-width: 400px) {
+  .square {
+    width: 70px;
+    height: 71px;
+  }
+  .title {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 6.136363506317139px;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
