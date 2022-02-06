@@ -233,6 +233,14 @@ svg:hover {
   fill: #FB5E84;
 }
 
+@media only screen and (max-width: 800px) {
+  .square {
+    width: 20vw;
+    height: 21vh;
+    margin-left: 2vw;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .square {
     width: 70px;

@@ -169,5 +169,20 @@ svg{
 svg:hover{
     fill: #FB5E84;
 }
+//.half-seconde{
+//    animation-name: animation;
+//    animation-duration: 2s;
+//    animation-iteration-count: infinite;
+//}
+//.half-minutes{
+//    animation-delay: 60s;
+//    animation-name: animation;
+//}
+
+//@keyframes animation {
+//    0%   {transform:translateY(100%)}
+//    50% {transform: rotateX(180deg)}
+//    100% {transform:translateY(100%)}
+//  }
 
 @import "_mobile.scss";
