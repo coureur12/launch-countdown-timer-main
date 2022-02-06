@@ -246,5 +246,9 @@ svg:hover {
     letter-spacing: 6.136363506317139px;
     text-align: center;
   }
+  .circle {
+    width: 7px;
+    height: 7px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
