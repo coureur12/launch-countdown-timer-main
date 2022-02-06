@@ -238,6 +238,9 @@ svg:hover {
     width: 70px;
     height: 71px;
   }
+  .square-text {
+    font-size: 7px;
+  }
   .title {
     font-size: 13px;
     font-style: normal;

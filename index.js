@@ -1,5 +1,5 @@
 setInterval(() => {
-var future = Date.parse("feb 06, 2022 01:30:00");
+var future = Date.parse("feb 10, 2022 01:30:00");
 var now = Date.now();
 diff = future - now;
 
